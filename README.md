@@ -26,37 +26,37 @@ A Python script that scrapes Vinted for listings matching specified keywords and
 
 1. Clone the repository:
 
-    \`\`\`sh
+    ```sh
     git clone https://github.com/StephenHF/VintedFinder.git
     cd VintedFinder
-    \`\`\`
+    ```
 
 2. Create and activate a virtual environment:
 
-    \`\`\`sh
+    ```sh
     python -m venv venv
-    source venv/bin/activate  # On Windows, use \`venv\Scripts\activate\`
-    \`\`\`
+    source venv/bin/activate  # On Windows, use `venv\Scriptsctivate`
+    ```
 
 3. Install the required Python packages:
 
-    \`\`\`sh
+    ```sh
     pip install -r requirements.txt
-    \`\`\`
+    ```
 
 4. Set up your credentials and search parameters:
 
     ### Using Environment Variables
 
-    - Create a \`.env\` file in the project directory with the following content:
+    - Create a `.env` file in the project directory with the following content:
 
-      \`\`\`env
+      ```env
       EMAIL_ADDRESS=your_email
       APP_PASSWORD=your_app_password
       RECIPIENT_EMAIL=recipient_email
       MAX_PRICE=1
       KEYWORDS=keyword1,keyword2,keyword3
-      \`\`\`
+      ```
 
     - `MAX_PRICE` sets the maximum price for the listings.
     - `KEYWORDS` is a comma-separated list of keywords to search for.
@@ -65,9 +65,9 @@ A Python script that scrapes Vinted for listings matching specified keywords and
 
 Run the script:
 
-    \`\`\`sh
+    ```sh
     python vinted_finder.py
-    \`\`\`
+    ```
 
 The script will scrape Vinted for listings matching the specified keywords and send an email with the details of the new listings.
 
@@ -77,4 +77,4 @@ Feel free to submit issues or pull requests if you have any improvements or sugg
 
 ## License
 
-This project is licensed under the MIT License. See the \`LICENSE\` file for details.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
